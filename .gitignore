@@ -1,0 +1,8 @@
+# Maven builds
+**/target/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
