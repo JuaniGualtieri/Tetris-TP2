@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.tetris.TestTetris1" time="0" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.tetris.TestTetris1" time="0.068" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,8 +15,9 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\BAUTISTA\AppData\Local\Temp\surefire4022536211002333670\surefirebooter17808905379201191368.jar C:\Users\BAUTISTA\AppData\Local\Temp\surefire4022536211002333670 2025-09-26T00-04-33_542-jvmRun1 surefire15303923673402593226tmp surefire_012578441751071460742tmp"/>
+    <property name="sun.java.command" value="C:\Users\BAUTISTA\AppData\Local\Temp\surefire15301874057871948451\surefirebooter15168646787950153725.jar C:\Users\BAUTISTA\AppData\Local\Temp\surefire15301874057871948451 2025-09-26T00-16-26_177-jvmRun1 surefire1431067865915391501tmp surefire_09929290234564158116tmp"/>
     <property name="jdk.debug" value="release"/>
+    <property name="test" value="com.tetris.TestTetris1#la_piece_DogRight_tiene_la_forma_correcta"/>
     <property name="surefire.test.class.path" value="C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\target\test-classes;C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\target\classes;C:\Users\BAUTISTA\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\BAUTISTA\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\BAUTISTA"/>
@@ -30,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\BAUTISTA\AppData\Local\Temp\surefire4022536211002333670\surefirebooter17808905379201191368.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\BAUTISTA\AppData\Local\Temp\surefire15301874057871948451\surefirebooter15168646787950153725.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.2+12-54"/>
@@ -59,11 +60,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="la_piece_t_tiene_la_forma_correcta" classname="com.tetris.TestTetris1" time="0"/>
-  <testcase name="la_piece_LRight_tiene_la_forma_correcta" classname="com.tetris.TestTetris1" time="0"/>
-  <testcase name="la_piece_DogRight_tiene_la_forma_correcta" classname="com.tetris.TestTetris1" time="0"/>
-  <testcase name="la_piece_Stick_tiene_la_forma_correcta" classname="com.tetris.TestTetris1" time="0"/>
-  <testcase name="la_piece_LLeft_tiene_la_forma_correcta" classname="com.tetris.TestTetris1" time="0"/>
-  <testcase name="la_piece_square_tiene_la_forma_correcta" classname="com.tetris.TestTetris1" time="0"/>
-  <testcase name="la_piece_DogLeft_tiene_la_forma_correcta" classname="com.tetris.TestTetris1" time="0"/>
+  <testcase name="la_piece_DogRight_tiene_la_forma_correcta" classname="com.tetris.TestTetris1" time="0.012"/>
 </testsuite>

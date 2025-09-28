@@ -15,7 +15,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\BAUTISTA\AppData\Local\Temp\surefire4022536211002333670\surefirebooter17808905379201191368.jar C:\Users\BAUTISTA\AppData\Local\Temp\surefire4022536211002333670 2025-09-26T00-04-33_542-jvmRun1 surefire15303923673402593226tmp surefire_012578441751071460742tmp"/>
+    <property name="sun.java.command" value="C:\Users\BAUTISTA\AppData\Local\Temp\surefire17067594370340247023\surefirebooter12225906431402426061.jar C:\Users\BAUTISTA\AppData\Local\Temp\surefire17067594370340247023 2025-09-26T00-16-16_937-jvmRun1 surefire8403055708930254824tmp surefire_017136359455944911470tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\target\test-classes;C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\target\classes;C:\Users\BAUTISTA\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\BAUTISTA\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\BAUTISTA\AppData\Local\Temp\surefire4022536211002333670\surefirebooter17808905379201191368.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\BAUTISTA\AppData\Local\Temp\surefire17067594370340247023\surefirebooter12225906431402426061.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.2+12-54"/>
@@ -60,9 +60,9 @@
     <property name="java.class.version" value="68.0"/>
   </properties>
   <testcase name="testFinalJuegoWin" classname="com.tetris.TestTetris5" time="0"/>
-  <testcase name="testClearLinea" classname="com.tetris.TestTetris5" time="0.001"/>
-  <testcase name="testLines" classname="com.tetris.TestTetris5" time="0.001"/>
+  <testcase name="testClearLinea" classname="com.tetris.TestTetris5" time="0"/>
+  <testcase name="testLines" classname="com.tetris.TestTetris5" time="0"/>
   <testcase name="testLineCompleteTrue" classname="com.tetris.TestTetris5" time="0"/>
-  <testcase name="testLineCompleteFalse" classname="com.tetris.TestTetris5" time="0.001"/>
+  <testcase name="testLineCompleteFalse" classname="com.tetris.TestTetris5" time="0"/>
   <testcase name="testRemoveLine" classname="com.tetris.TestTetris5" time="0"/>
 </testsuite>
