@@ -122,7 +122,7 @@ public class Board {
         }
     }
     
-    private void placePiece(Piece piece, int x, int y) {
+    public void placePiece(Piece piece, int x, int y) {
         int[][] shape = piece.getPiece();
         int pieceWidth = shape[0].length;
         int pieceHeight = shape.length;
