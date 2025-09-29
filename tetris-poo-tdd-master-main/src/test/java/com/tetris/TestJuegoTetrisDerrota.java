@@ -31,7 +31,7 @@ public class TestJuegoTetrisDerrota {
         boolean puedeEntrar = board.LimitesVeri(extra);
 
         // Verificamos que no hay espacio (derrota) 
-        assertFalse("No entran mas piezas en el tablero, has perdido", puedeEntrar);
+        assertFalse("No debería poder entrar una nueva pieza, el juego está en derrota", puedeEntrar);
 
         // Validamos que no se borraron líneas (no es victoria)
         boolean gano = board.checkFinalDelJuego();

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.tetris.TestTetris3" time="0.913" tests="16" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.tetris.TestTetris3" time="0.912" tests="16" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\BAUTISTA\AppData\Local\Temp\surefire1527369266865466584\surefirebooter10612860671610244910.jar C:\Users\BAUTISTA\AppData\Local\Temp\surefire1527369266865466584 2025-09-29T13-55-56_798-jvmRun1 surefire7889623382592521758tmp surefire_011536267025911950231tmp"/>
+    <property name="sun.java.command" value="C:\Users\BAUTISTA\AppData\Local\Temp\surefire728748920288564917\surefirebooter1595291654234892558.jar C:\Users\BAUTISTA\AppData\Local\Temp\surefire728748920288564917 2025-09-29T17-50-58_412-jvmRun1 surefire12881702873401761850tmp surefire_015471977209138418809tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\target\test-classes;C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\target\classes;C:\Users\BAUTISTA\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\BAUTISTA\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\BAUTISTA\AppData\Local\Temp\surefire1527369266865466584\surefirebooter10612860671610244910.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\BAUTISTA\AppData\Local\Temp\surefire728748920288564917\surefirebooter1595291654234892558.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.2+12-54"/>
@@ -59,24 +59,32 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="testPieceDog_se_mueve_a_la_derecha_dos_veces_y_va_a_la_izquierda" classname="com.tetris.TestTetris3" time="0"/>
-  <testcase name="testPieceDogLeft_baja_dos_vece" classname="com.tetris.TestTetris3" time="0"/>
-  <testcase name="test_clock_pieceL" classname="com.tetris.TestTetris3" time="0.102"/>
-  <testcase name="test_clock_pieceT" classname="com.tetris.TestTetris3" time="0.102"/>
-  <testcase name="testBoard" classname="com.tetris.TestTetris3" time="0"/>
-  <testcase name="testClock" classname="com.tetris.TestTetris3" time="0.501"/>
-  <testcase name="testPieceDog_se_mueve_a_la_derecha_en_0_0" classname="com.tetris.TestTetris3" time="0"/>
-  <testcase name="test_clock_pieceSquare" classname="com.tetris.TestTetris3" time="0.102"/>
-  <testcase name="testPieceDog_se_mueve_a_la_izquierda_en_0_0" classname="com.tetris.TestTetris3" time="0"/>
-  <testcase name="testPieceDog_Baja_dos_veces" classname="com.tetris.TestTetris3" time="0.001">
+  <testcase name="testPieceDog_se_mueve_a_la_derecha_dos_veces_y_va_a_la_izquierda" classname="com.tetris.TestTetris3" time="0">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at com.tetris.TestTetris3.testPieceDog_Baja_dos_veces(TestTetris3.java:156)
+	at com.tetris.TestTetris3.testPieceDog_se_mueve_a_la_derecha_dos_veces_y_va_a_la_izquierda(TestTetris3.java:249)
 </failure>
   </testcase>
+  <testcase name="testPieceDogLeft_baja_dos_vece" classname="com.tetris.TestTetris3" time="0"/>
+  <testcase name="test_clock_pieceL" classname="com.tetris.TestTetris3" time="0.101"/>
+  <testcase name="test_clock_pieceT" classname="com.tetris.TestTetris3" time="0.102"/>
+  <testcase name="testBoard" classname="com.tetris.TestTetris3" time="0"/>
+  <testcase name="testClock" classname="com.tetris.TestTetris3" time="0.502"/>
+  <testcase name="testPieceDog_se_mueve_a_la_derecha_en_0_0" classname="com.tetris.TestTetris3" time="0.001"/>
+  <testcase name="test_clock_pieceSquare" classname="com.tetris.TestTetris3" time="0.101"/>
+  <testcase name="testPieceDog_se_mueve_a_la_izquierda_en_0_0" classname="com.tetris.TestTetris3" time="0"/>
+  <testcase name="testPieceDog_Baja_dos_veces" classname="com.tetris.TestTetris3" time="0.001"/>
   <testcase name="testPieceStick_baja_una_vez" classname="com.tetris.TestTetris3" time="0"/>
-  <testcase name="testPieceDog_baja_dos_veces" classname="com.tetris.TestTetris3" time="0"/>
+  <testcase name="testPieceDog_baja_dos_veces" classname="com.tetris.TestTetris3" time="0.001">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at com.tetris.TestTetris3.testPieceDog_baja_dos_veces(TestTetris3.java:185)
+</failure>
+  </testcase>
   <testcase name="test_clock_pieceDog" classname="com.tetris.TestTetris3" time="0.101"/>
   <testcase name="testPieceStick_baja_dos_veces" classname="com.tetris.TestTetris3" time="0"/>
-  <testcase name="testPieceDog_se_mueve_a_la_derecha" classname="com.tetris.TestTetris3" time="0.001"/>
+  <testcase name="testPieceDog_se_mueve_a_la_derecha" classname="com.tetris.TestTetris3" time="0.001">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at com.tetris.TestTetris3.testPieceDog_se_mueve_a_la_derecha(TestTetris3.java:215)
+</failure>
+  </testcase>
   <testcase name="testPieceDog_se_mueve_a_la_izquierda" classname="com.tetris.TestTetris3" time="0"/>
 </testsuite>

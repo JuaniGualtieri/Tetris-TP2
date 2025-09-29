@@ -39,7 +39,7 @@ public class TestColision {
 
         // Verificación de colisión
         // El stick debería haber quedado justo encima de la L
-        assertTrue("Las piezas colisionan",
+        assertTrue("El stick debe haber colisionado con la L",
                    stick.getY() < finalYL);
 
         // si intentamos bajarlo una más, no debería entrar

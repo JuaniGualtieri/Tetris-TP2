@@ -1,7 +1,6 @@
 package com.tetris;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class TestCaidaLibre {
@@ -11,16 +10,8 @@ public class TestCaidaLibre {
         Board board = new Board();
         PieceSquare square = new PieceSquare();
 
-        // Colocamos el cuadrado en la parte superior
-        board.addPieceBoard(square);
-
-        // Simulamos la caída: mientras esté dentro del tablero, sigue bajando
-        while (board.LimitesVeri(square)) {
-            square.moveDown();
-        }
-
-        // Retrocedemos una fila porque el último moveDown pasó de más
-        square.setY(square.getY() - 1);
+        // Dejamos caer el cuadrado hasta el fondo usando dropPiece
+        board.dropPiece(square);
 
         // La pieza debe quedar en la posición más baja posible
         int expectedY = board.grid.length - square.getPiece().length;
@@ -36,16 +27,8 @@ public class TestCaidaLibre {
         Board board = new Board();
         PieceLLeft pieceL = new PieceLLeft();
 
-        // Colocamos la L en la parte superior
-        board.addPieceBoard(pieceL);
-
-        // Simulamos la caída hasta que ya no pueda bajar
-        while (board.LimitesVeri(pieceL)) {
-            pieceL.moveDown();
-        }
-
-        // Retrocedemos una fila porque el último moveDown pasó de más
-        pieceL.setY(pieceL.getY() - 1);
+        // Dejamos caer la L hasta el fondo usando dropPiece
+        board.dropPiece(pieceL);
 
         // La pieza debe quedar en la posición más baja posible
         int expectedY = board.grid.length - pieceL.getPiece().length;

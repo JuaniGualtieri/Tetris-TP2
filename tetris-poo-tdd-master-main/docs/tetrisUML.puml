@@ -1,0 +1,86 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+' ==== Interfaces ====
+interface IRotator {
+  +rotateLeft()
+  +rotateRight()
+}
+interface IClockSuscribe {
+  +onTick()
+}
+
+' ==== Clases de dominio ====
+class Board {
+  - ancho : int
+  - alto : int
+  + grid : int[][]
+  - pieceActual : Piece
+  - totalCleared : int
+  - linesToClear : int
+  + addPieceBoard(p: Piece)
+  + placePiece(p: Piece, x: int, y: int)
+  + LimitesVeri(p: Piece) : boolean
+  + moveLeft() : boolean
+  + moveRight() : boolean
+  + moveDown() : boolean
+  + isLineComplete(row: int[]) : boolean
+  + removeLine(row: int)
+  + clearLinea() : int
+  + checkFinalDelJuego() : boolean
+}
+
+abstract class Piece implements IRotator {
+  # piece : int[][]
+  + x : int
+  + y : int
+  + getPiece() : int[][]
+  + getShape() : int[][]  
+  + setX(x:int)
+  + setY(y:int)
+  + getX() : int
+  + getY() : int
+  + rotateLeft()
+  + rotateRight()
+  + moveDown()
+  + moveLeft()
+  + moveRight()
+}
+
+class PieceStick
+class PieceSquare
+class PieceT
+class PieceLeft
+class PieceRight
+class PieceDogLeft
+class PieceDogRight
+
+class Clock {
+  - suscriptores : List<IClockSuscribe>
+  + suscribe(s: IClockSuscribe)
+  + unsuscribe(s: IClockSuscribe)
+  + tic()
+}
+
+class ClockDemo implements IClockSuscribe {
+  - ticCount : int
+  + onTick()
+  + getTic() : int
+}
+
+' ==== Relaciones ====
+Board "1" o-- "0..1" Piece : currentPiece
+Piece <|-- PieceStick
+Piece <|-- PieceSquare
+Piece <|-- PieceT
+Piece <|-- PieceLeft
+Piece <|-- PieceRight
+Piece <|-- PieceDogLeft
+Piece <|-- PieceDogRight
+
+IRotator <|.. Piece
+IClockSuscribe <|.. ClockDemo
+Clock "1" o-- "0..*" IClockSuscribe : notifica
+
+@enduml
+
