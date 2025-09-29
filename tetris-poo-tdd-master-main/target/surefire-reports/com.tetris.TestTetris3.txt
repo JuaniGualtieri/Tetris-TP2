@@ -1,16 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.tetris.TestTetris3
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.925 s <<< FAILURE! - in com.tetris.TestTetris3
-testPieceDog_se_mueve_a_la_derecha_en_0_0(com.tetris.TestTetris3)  Time elapsed: 0.001 s  <<< FAILURE!
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.913 s <<< FAILURE! - in com.tetris.TestTetris3
+testPieceDog_Baja_dos_veces(com.tetris.TestTetris3)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
-	at com.tetris.TestTetris3.testPieceDog_se_mueve_a_la_derecha_en_0_0(TestTetris3.java:264)
-
-testPieceStick_baja_una_vez(com.tetris.TestTetris3)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.AssertionError
-	at com.tetris.TestTetris3.testPieceStick_baja_una_vez(TestTetris3.java:28)
-
-testPieceDog_se_mueve_a_la_derecha(com.tetris.TestTetris3)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.AssertionError
-	at com.tetris.TestTetris3.testPieceDog_se_mueve_a_la_derecha(TestTetris3.java:215)
+	at com.tetris.TestTetris3.testPieceDog_Baja_dos_veces(TestTetris3.java:156)
 

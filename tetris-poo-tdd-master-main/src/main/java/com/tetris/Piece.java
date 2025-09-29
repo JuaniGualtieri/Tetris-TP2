@@ -3,7 +3,7 @@ import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
-//test
+
 public class Piece{
     
     public int[][] piece;

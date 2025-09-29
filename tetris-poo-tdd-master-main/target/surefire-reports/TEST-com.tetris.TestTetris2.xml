@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.tetris.TestTetris2" time="0.052" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.tetris.TestTetris2" time="0.002" tests="21" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,9 +15,8 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\BAUTISTA\AppData\Local\Temp\surefire7427584591667995888\surefirebooter6349709924272262468.jar C:\Users\BAUTISTA\AppData\Local\Temp\surefire7427584591667995888 2025-09-28T18-25-36_854-jvmRun1 surefire11238509294886732466tmp surefire_09155276368511664188tmp"/>
+    <property name="sun.java.command" value="C:\Users\BAUTISTA\AppData\Local\Temp\surefire1527369266865466584\surefirebooter10612860671610244910.jar C:\Users\BAUTISTA\AppData\Local\Temp\surefire1527369266865466584 2025-09-29T13-55-56_798-jvmRun1 surefire7889623382592521758tmp surefire_011536267025911950231tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="com.tetris.TestTetris2#girar_piezaLleft_random"/>
     <property name="surefire.test.class.path" value="C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\target\test-classes;C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\target\classes;C:\Users\BAUTISTA\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\BAUTISTA\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\BAUTISTA"/>
@@ -31,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\BAUTISTA\AppData\Local\Temp\surefire7427584591667995888\surefirebooter6349709924272262468.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\BAUTISTA\AppData\Local\Temp\surefire1527369266865466584\surefirebooter10612860671610244910.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.2+12-54"/>
@@ -60,9 +59,33 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="girar_piezaLleft_random" classname="com.tetris.TestTetris2" time="0.013">
+  <testcase name="girar_piezalLeft_derecha" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_piezaStick_random" classname="com.tetris.TestTetris2" time="0">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at com.tetris.TestTetris2.girar_piezaLleft_random(TestTetris2.java:284)
+	at com.tetris.TestTetris2.girar_piezaStick_random(TestTetris2.java:320)
 </failure>
   </testcase>
+  <testcase name="girar_palo_Der" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_palo_izq" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_piezalLeft_izquierda" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_piezaLRight_random" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_piezaT_random" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_DogLeft_derecha" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_piezalDer_izq" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_DogRight_izquierda" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_piezaT_izquierda" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_cubo_prueba" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_DogLeft_izquierda" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_piezaT_derecha" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_palo_Der_dos_veces" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_piezaSquare_random" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_piezaLleft_random" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_piezalDer_derecha" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_piezaDogRight_random" classname="com.tetris.TestTetris2" time="0.001">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at com.tetris.TestTetris2.girar_piezaDogRight_random(TestTetris2.java:272)
+</failure>
+  </testcase>
+  <testcase name="girar_2_veces_piezaStick_random" classname="com.tetris.TestTetris2" time="0"/>
+  <testcase name="girar_DogRight_derecha" classname="com.tetris.TestTetris2" time="0.001"/>
 </testsuite>

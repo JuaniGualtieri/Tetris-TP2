@@ -30,7 +30,7 @@ public class Board {
         placePiece(piece, piece.getX(), piece.getY()); // dejamos la pieza en tablero
     }
 
-    // Método que verifica si la pieza está dentro de los límites del tablero y considera las colisiones 
+    // Metodo que verifica si la pieza está dentro de los límites del tablero y considera las colisiones 
     public boolean LimitesVeri(Piece piece) {
         int[][] shape = piece.getPiece();
         int pieceWidth = shape[0].length;

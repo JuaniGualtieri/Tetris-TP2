@@ -1,9 +1,10 @@
 package com.tetris;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
-public class TestGanarJuego {
+public class TestGanarJuegoUnitario {
 
     @Test
     public void ganar_juego_con_cuadrados() {

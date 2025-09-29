@@ -1,6 +1,8 @@
 package com.tetris;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 public class TestColision {
@@ -37,7 +39,7 @@ public class TestColision {
 
         // Verificación de colisión
         // El stick debería haber quedado justo encima de la L
-        assertTrue("El stick debe haber colisionado con la L",
+        assertTrue("Las piezas colisionan",
                    stick.getY() < finalYL);
 
         // si intentamos bajarlo una más, no debería entrar
