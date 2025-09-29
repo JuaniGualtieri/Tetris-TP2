@@ -1,6 +1,6 @@
 package com.tetris;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
 import org.junit.Test;
 
 public class TestJuegoTetrisDerrota {
@@ -11,7 +11,7 @@ public class TestJuegoTetrisDerrota {
         int rows = board.grid.length;
         int cols = board.grid[0].length;
 
-        // --- 1) Llenamos el tablero completo con cuadrados ---
+        //  Llenamos el tablero completo con cuadrados 
         for (int r = rows - 1; r >= 0; r -= 2) {
             for (int c = 0; c < cols; c += 2) {
                 PieceSquare square = new PieceSquare();
@@ -21,14 +21,14 @@ public class TestJuegoTetrisDerrota {
             }
         }
 
-        // --- 2) Intentamos colocar una pieza más ---
+        //  Intentamos colocar una pieza más 
         PieceSquare extra = new PieceSquare();
         extra.setX(0);
         extra.setY(0);
 
         boolean puedeEntrar = board.LimitesVeri(extra);
 
-        // --- 3) Validamos derrota ---
+        // Validamos derrota 
         assertFalse("No debería poder entrar una nueva pieza, el juego está en derrota", puedeEntrar);
     }
 }
