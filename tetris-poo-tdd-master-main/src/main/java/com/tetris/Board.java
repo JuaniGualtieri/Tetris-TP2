@@ -4,39 +4,39 @@ import java.util.Random;
 public class Board {
 
     private final int ancho = 10;
-    private final int alto = 20; // 10x20
-    public final int[][] grid = new int[alto][ancho]; // La matriz debe ser alto x ancho
+    private final int alto = 20; // Tablero clásico de Tetris: 10 columnas x 20 filas
+    public final int[][] grid = new int[alto][ancho]; // Representación del tablero como matriz
     private Piece pieceActual;
     private final Random random = new Random();
     private int totalCleared = 0;
-    private final int linesToClear = 5; // completar 5 lineas
+    private final int linesToClear = 5; // Para ganar: completar 5 líneas
 
-    // Agrega la pieza al tablero de manera aleatoria en el primer renglón
+    // Coloca una pieza en el tablero, en una posición aleatoria de la fila superior
     public void addPieceBoard(Piece piece) {
-        int xPos = random.nextInt(ancho - piece.getShape()[0].length); // Evita que la pieza salga de los bordes
+        int xPos = random.nextInt(ancho - piece.getShape()[0].length); // Evita que se salga del borde
         pieceActual = piece;
-        placePiece(pieceActual, xPos, 0); // Coloca la pieza en el tablero en la fila superior
+        placePiece(pieceActual, xPos, 0);
     }
 
-    // agrega la pieza en una posición específica (para tests deterministas, sin Random)
+    // Variante determinista para pruebas: coloca la pieza en una posición fija (x,y)
     public void addPieceBoard(Piece piece, int x, int y) {
         pieceActual = piece;
         placePiece(pieceActual, x, y);
     }
 
-    // Caída libre de una pieza 
+    // Simula la caída libre de una pieza hasta que toca el fondo o colisiona
     public void dropPiece(Piece piece) {
         while (true) {
             piece.moveDown();
-            if (!LimitesVeri(piece)) {
-                piece.setY(piece.getY() - 1); // corregimos la pasada
+            if (!LimitesVeri(piece)) { // Si salió de límites o chocó
+                piece.setY(piece.getY() - 1); // Corrige la última bajada
                 break;
             }
         }
-        placePiece(piece, piece.getX(), piece.getY()); // dejamos la pieza en tablero
+        placePiece(piece, piece.getX(), piece.getY()); // La pieza queda pintada en el tablero
     }
 
-    // Metodo que verifica si la pieza está dentro de los límites del tablero y considera las colisiones 
+    // Verifica si una pieza está dentro del tablero y no se superpone con otras
     public boolean LimitesVeri(Piece piece) {
         int[][] shape = piece.getPiece();
         int pieceWidth = shape[0].length;
@@ -44,87 +44,80 @@ public class Board {
         int x = piece.getX();
         int y = piece.getY();
 
-        // Verifica que la pieza no salga por los lados ni por abajo del tablero
+        // Límite del tablero (bordes y piso)
         if (x < 0 || x + pieceWidth > ancho || y < 0 || y + pieceHeight > alto) {
             return false;
         }
 
-        // Verifica si la pieza se superpone con otras piezas en el tablero
+        // Colisión con otras piezas
         for (int i = 0; i < pieceHeight; i++) {
             for (int j = 0; j < pieceWidth; j++) {
-                if (shape[i][j] != 0) { // Si la celda de la pieza es diferente de 0
-                    if (grid[y + i][x + j] != 0) {
-                        return false; // La pieza se superpone con otra pieza
-                    }
+                if (shape[i][j] != 0 && grid[y + i][x + j] != 0) {
+                    return false;
                 }
             }
         }
+        return true;
+    }
 
-        return true;    
-    } 
-
+    // Mueve hacia abajo la pieza actual (si no hay colisión)
     public boolean moveDown() {
         int currentY = pieceActual.getY();
         pieceActual.setY(currentY + 1);
 
-        // Verifica si el movimiento está dentro de los límites del tablero
-        if (!LimitesVeri(pieceActual)) {
-            pieceActual.setY(currentY); // Revertir el movimiento si está fuera de los límites
+        if (!LimitesVeri(pieceActual)) { // Si sale de los límites, vuelve atrás
+            pieceActual.setY(currentY);
         }
-        return true; // Movimiento válido
+        return true;
     }
 
+    // Mueve la pieza actual a la derecha
     public boolean moveRight() {
-        if (pieceActual == null) {
-            return false;
-        }
+        if (pieceActual == null) return false;
 
-        int currentX = pieceActual.getX(); // Coordenada actual 'x'
-        pieceActual.setX(currentX + 1); 
+        int currentX = pieceActual.getX();
+        pieceActual.setX(currentX + 1);
 
-        // Verifica si la pieza sigue dentro de los límites después del movimiento
         if (!LimitesVeri(pieceActual)) {
-            pieceActual.setX(currentX); // corregido: antes ponía setY por error
+            pieceActual.setX(currentX); // Revierte si choca o se sale
         }
 
-        pieceActual.moveDown();
+        pieceActual.moveDown(); // Siempre desciende tras moverse
         updateBoard();
-        return true; // Movimiento válido
+        return true;
     }
 
+    // Mueve la pieza actual a la izquierda
     public boolean moveLeft() {
-        if (pieceActual == null) {
-            return false;
-        }
+        if (pieceActual == null) return false;
 
-        int currentX = pieceActual.getX(); // Coordenada actual 'x'
-        pieceActual.setX(currentX - 1); 
+        int currentX = pieceActual.getX();
+        pieceActual.setX(currentX - 1);
 
-        // Verifica si la pieza sigue dentro de los límites después del movimiento
         if (!LimitesVeri(pieceActual)) {
-            pieceActual.setX(currentX); // corregido: antes ponía setY por error
+            pieceActual.setX(currentX);
         }
 
         pieceActual.moveDown();
         updateBoard();
-        return true; // Movimiento válido
+        return true;
     }
 
+    // Actualiza el tablero con la posición más reciente de la pieza actual
     public void updateBoard() {
         clearBoard();        
         placePiece(pieceActual, pieceActual.getX(), pieceActual.getY());
         checkFinalDelJuego();
     }
 
+    // Limpia del tablero las celdas ocupadas por la pieza actual
     private void clearBoard() {
         int[][] shape = pieceActual.getPiece();
-        int pieceWidth = shape[0].length;
-        int pieceHeight = shape.length;
         int x = pieceActual.getX();
         int y = pieceActual.getY();
 
-        for (int i = 0; i < pieceHeight; i++) {
-            for (int j = 0; j < pieceWidth; j++) {
+        for (int i = 0; i < shape.length; i++) {
+            for (int j = 0; j < shape[0].length; j++) {
                 if (shape[i][j] != 0) {
                     grid[y + i][x + j] = 0;
                 }
@@ -132,13 +125,11 @@ public class Board {
         }
     }
 
+    // Dibuja la pieza en la posición indicada dentro de la grilla
     public void placePiece(Piece piece, int x, int y) {
         int[][] shape = piece.getPiece();
-        int pieceWidth = shape[0].length;
-        int pieceHeight = shape.length;
-
-        for (int i = 0; i < pieceHeight; i++) {
-            for (int j = 0; j < pieceWidth; j++) {
+        for (int i = 0; i < shape.length; i++) {
+            for (int j = 0; j < shape[0].length; j++) {
                 if (shape[i][j] != 0) {
                     grid[y + i][x + j] = shape[i][j];
                 }
@@ -146,6 +137,7 @@ public class Board {
         }
     }
 
+    // Verifica si una fila está completa
     public boolean isLineComplete(int[] row) {
         for (int cell : row) {
             if (cell == 0) return false;
@@ -153,13 +145,15 @@ public class Board {
         return true;
     }
 
+    // Elimina una fila y baja todas las superiores
     public void removeLine(int row) {
         for (int i = row; i > 0; i--) {
             grid[i] = grid[i - 1];
         }
-        grid[0] = new int[ancho]; 
+        grid[0] = new int[ancho]; // La fila superior queda vacía
     }
 
+    // Recorre el tablero y elimina todas las filas completas
     public int clearLinea() {
         int linesCleared = 0;
         for (int row = 0; row < alto; row++) {
@@ -171,6 +165,7 @@ public class Board {
         return linesCleared;
     }
 
+    // Chequea condición de victoria (cuando se limpian >= 5 filas)
     public boolean checkFinalDelJuego() {
         int linesCleareds = clearLinea();
         totalCleared += linesCleareds;

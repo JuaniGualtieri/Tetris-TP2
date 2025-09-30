@@ -1,9 +1,9 @@
 package com.tetris;
 import com.tetris.interfaces.IClockSuscribe;
 
-public class ClockDemo
-        implements IClockSuscribe
- {
+// Ejemplo de implementación de IClockSuscribe
+// Contador que incrementa en cada tic del reloj
+public class ClockDemo implements IClockSuscribe {
     
     private int ticCounter = 0;
     
