@@ -1,12 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: com.tetris.TestTetris2
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 21, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.004 s <<< FAILURE! - in com.tetris.TestTetris2
 girar_piezaStick_random(com.tetris.TestTetris2)  Time elapsed: 0 s  <<< FAILURE!
+=======
+Tests run: 21, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.029 s <<< FAILURE! - in com.tetris.TestTetris2
+girar_piezaLRight_random(com.tetris.TestTetris2)  Time elapsed: 0.014 s  <<< FAILURE!
+>>>>>>> 9ddddc4ae2ba95e79dea2791aa0de7100505ffe4
 java.lang.AssertionError
-	at com.tetris.TestTetris2.girar_piezaStick_random(TestTetris2.java:320)
+	at com.tetris.TestTetris2.girar_piezaLRight_random(TestTetris2.java:296)
 
 girar_piezaT_random(com.tetris.TestTetris2)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.tetris.TestTetris2.girar_piezaT_random(TestTetris2.java:260)
+<<<<<<< HEAD
+=======
+
+girar_2_veces_piezaStick_random(com.tetris.TestTetris2)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.tetris.TestTetris2.girar_2_veces_piezaStick_random(TestTetris2.java:333)
+>>>>>>> 9ddddc4ae2ba95e79dea2791aa0de7100505ffe4
 
