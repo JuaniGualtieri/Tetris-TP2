@@ -16,10 +16,7 @@ public class Piece{
     
     
     public Piece() {
-        //----> falta probar
-        //this.timer = new Timer();
-        //this.clock = new ClockDemo();
-        //startTimer();
+        
     }
 
     public Piece(int[][] piece){

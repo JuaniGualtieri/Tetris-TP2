@@ -1,7 +1,7 @@
 com\tetris\TestGanarJuegoUnitario.class
-com\tetris\TestTetris4.class
 com\tetris\TestTetris2.class
 com\tetris\TestJuegoTetrisDerrota.class
+com\tetris\TestCoberturaExtra.class
 com\tetris\TestTetris3.class
 com\tetris\TestColision.class
 com\tetris\TestJuegoTetrisCompleto.class
