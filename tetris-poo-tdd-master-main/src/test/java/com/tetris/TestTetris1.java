@@ -4,12 +4,7 @@ import static org.junit.Assert.assertArrayEquals;
 import org.junit.Test;
 
 public class TestTetris1 {
-    // @Test
-    // public void la_pieza_existe(){
-    // PieceL pieceL = new PieceL();
-
-    // assert pieceL.getPiece() != null;
-    // }
+    
 
     @Test
     public void la_piece_LLeft_tiene_la_forma_correcta() {

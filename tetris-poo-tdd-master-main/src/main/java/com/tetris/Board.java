@@ -18,6 +18,12 @@ public class Board {
         placePiece(pieceActual, xPos, 0); // Coloca la pieza en el tablero en la fila superior
     }
 
+    // agrega la pieza en una posición específica (para tests deterministas, sin Random)
+    public void addPieceBoard(Piece piece, int x, int y) {
+        pieceActual = piece;
+        placePiece(pieceActual, x, y);
+    }
+
     // Caída libre de una pieza 
     public void dropPiece(Piece piece) {
         while (true) {

@@ -1,0 +1,14 @@
+com\tetris\PieceSquare.class
+com\tetris\PieceStick.class
+com\tetris\Piece$1.class
+com\tetris\interfaces\IClockSuscribe.class
+com\tetris\PieceDogRight.class
+com\tetris\PieceLLeft.class
+com\tetris\Clock.class
+com\tetris\PieceDogLeft.class
+com\tetris\Board.class
+com\tetris\ClockDemo.class
+com\tetris\interfaces\IRotator.class
+com\tetris\Piece.class
+com\tetris\PieceT.class
+com\tetris\PieceLRight.class

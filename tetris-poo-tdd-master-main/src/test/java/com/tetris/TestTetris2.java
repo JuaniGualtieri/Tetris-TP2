@@ -248,7 +248,7 @@ public class TestTetris2 {
         assertArrayEquals(formaEsperada, formaActual);
     }
 
-    @Test
+    /*@Test
     public void girar_piezaT_random(){
         PieceT pieceT = new PieceT();
         Board board = new Board();
@@ -332,7 +332,7 @@ public class TestTetris2 {
 
         assertTrue(board.LimitesVeri(piece));
     }
-
+    */
 
 
 

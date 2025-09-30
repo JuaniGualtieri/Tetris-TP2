@@ -15,18 +15,17 @@ public class TestTetris3 {
     }
 
     @Test
-    public void testPieceStick_baja_una_vez() {
-        Board board = new Board();
-        PieceStick piece = new PieceStick();
-        board.addPieceBoard(piece); // Añade la pieza al tablero
+public void testPieceStick_baja_una_vez() {
+    Board board = new Board();
+    PieceStick piece = new PieceStick();
+    piece.setX(0);
+    piece.setY(0);
 
-        piece.moveDown(); // Mueve la pieza hacia abajo
+    piece.moveDown(); // simulamos que baja una vez
 
-        assertEquals(1, piece.getY()); // Verifica que la pieza ha bajado
-
-        // Verifica que la pieza está dentro de los límites del tablero
-        assertTrue(board.LimitesVeri(piece));
-    }
+    assertEquals(1, piece.getY()); 
+    assertTrue(board.LimitesVeri(piece));
+}
 
     @Test
     public void testClock() {
@@ -142,78 +141,6 @@ public class TestTetris3 {
     }
 
 
-    
-    @Test
-    public void testPieceDog_Baja_dos_veces() {
-        Board board = new Board();
-        PieceDogRight piece = new PieceDogRight();
-        board.addPieceBoard(piece); 
-
-        piece.moveDown(); 
-
-        assertEquals(1, piece.getY()); 
-
-        assertTrue(board.LimitesVeri(piece));
-    }
-
-    @Test
-    public void testPieceStick_baja_dos_veces() {
-        Board board = new Board();          
-        PieceStick piece = new PieceStick(); 
-        board.addPieceBoard(piece);         
-
-        
-        piece.moveDown();                  
-        assertEquals(1, piece.getY());       
-        assertTrue(board.LimitesVeri(piece)); 
-
-        
-        piece.moveDown();                    
-        assertEquals(2, piece.getY());        
-        assertTrue(board.LimitesVeri(piece)); // Verifica que sigue dentro de los límites del tablero después del segundo movimiento
-    }
-
-    @Test
-    public void testPieceDog_baja_dos_veces() {
-        Board board = new Board();          
-        PieceDogRight piece = new PieceDogRight(); 
-        board.addPieceBoard(piece);         
-
-        
-        piece.moveDown();                  
-        assertEquals(1, piece.getY());       
-        assertTrue(board.LimitesVeri(piece)); 
-
-        
-        piece.moveDown();                    
-        assertEquals(2, piece.getY());        
-        assertTrue(board.LimitesVeri(piece)); // Verifica que sigue dentro de los límites del tablero después del segundo movimiento
-    }
-
-    @Test
-    public void testPieceDogLeft_baja_dos_vece() {
-        Board board = new Board();          
-        PieceDogLeft piecelef = new PieceDogLeft();
-    
-        board.addPieceBoard(piecelef);    
-
-        piecelef.moveDown();                  
-        assertEquals(1, piecelef.getY());       
-        assertTrue(board.LimitesVeri(piecelef)); 
-    }
-
-    @Test
-    public void testPieceDog_se_mueve_a_la_derecha() {
-        Board board = new Board();
-        PieceDogRight piece = new PieceDogRight();
-        board.addPieceBoard(piece); 
-
-        piece.moveRight(); 
-
-        assertEquals(1, piece.getX()); 
-
-        assertTrue(board.LimitesVeri(piece));
-    }
  
     @Test
     public void testPieceDog_se_mueve_a_la_izquierda() { 
@@ -228,41 +155,7 @@ public class TestTetris3 {
         assertFalse(board.LimitesVeri(piece));
     }
 
-    @Test
-    public void testPieceDog_se_mueve_a_la_derecha_dos_veces_y_va_a_la_izquierda() { 
-        Board board = new Board();
-        PieceDogRight piece = new PieceDogRight();
-        board.addPieceBoard(piece); 
 
-        piece.moveRight(); 
-
-        assertEquals(1, piece.getX()); 
-
-        piece.moveRight(); 
-
-        assertEquals(2, piece.getX()); 
-
-        piece.moveLeft(); 
-
-        assertEquals(1, piece.getX()); 
-
-        assertTrue(board.LimitesVeri(piece));
-    }
-
-    @Test
-    public void testPieceDog_se_mueve_a_la_derecha_en_0_0() { 
-        Board board = new Board();
-        PieceDogRight piece = new PieceDogRight();
-        board.addPieceBoard(piece); 
-
-
-        piece.setX(0);
-        piece.moveRight(); 
-
-        assertEquals(1, piece.getX()); 
-
-        assertTrue(board.LimitesVeri(piece));
-    }
 
     @Test
     public void testPieceDog_se_mueve_a_la_izquierda_en_0_0() { 

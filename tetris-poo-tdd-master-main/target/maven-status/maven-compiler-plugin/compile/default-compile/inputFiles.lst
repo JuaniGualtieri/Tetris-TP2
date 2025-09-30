@@ -1,13 +1,13 @@
-C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\ClockDemo.java
-C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\PieceT.java
-C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\PieceLLeft.java
-C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\PieceLRight.java
-C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\PieceSquare.java
-C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\interfaces\IRotator.java
-C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\Clock.java
-C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\interfaces\IClockSuscribe.java
-C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\PieceDogRight.java
-C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\PieceDogLeft.java
-C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\PieceStick.java
-C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\Board.java
-C:\Users\BAUTISTA\Desktop\Proyectos JAVA Visual\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\Piece.java
+C:\Users\user\Desktop\Proyecto\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\PieceLRight.java
+C:\Users\user\Desktop\Proyecto\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\PieceLLeft.java
+C:\Users\user\Desktop\Proyecto\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\PieceStick.java
+C:\Users\user\Desktop\Proyecto\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\PieceSquare.java
+C:\Users\user\Desktop\Proyecto\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\PieceT.java
+C:\Users\user\Desktop\Proyecto\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\Clock.java
+C:\Users\user\Desktop\Proyecto\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\PieceDogLeft.java
+C:\Users\user\Desktop\Proyecto\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\interfaces\IRotator.java
+C:\Users\user\Desktop\Proyecto\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\PieceDogRight.java
+C:\Users\user\Desktop\Proyecto\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\Board.java
+C:\Users\user\Desktop\Proyecto\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\ClockDemo.java
+C:\Users\user\Desktop\Proyecto\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\Piece.java
+C:\Users\user\Desktop\Proyecto\Tetris-TP2\tetris-poo-tdd-master-main\src\main\java\com\tetris\interfaces\IClockSuscribe.java

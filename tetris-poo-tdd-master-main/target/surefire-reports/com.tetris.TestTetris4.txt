@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: com.tetris.TestTetris4
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.tetris.TestTetris4
+Tests run: 9, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in com.tetris.TestTetris4
+testPieceLRighttNoPuedeBajarMas(com.tetris.TestTetris4)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<18> but was:<0>
+	at com.tetris.TestTetris4.testPieceLRighttNoPuedeBajarMas(TestTetris4.java:99)
+
+testPieceDogLeftNoPuedeBajarMas(com.tetris.TestTetris4)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<18> but was:<0>
+	at com.tetris.TestTetris4.testPieceDogLeftNoPuedeBajarMas(TestTetris4.java:115)
+
+testPieceTNoPuedeBajarMas(com.tetris.TestTetris4)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected:<18> but was:<0>
+	at com.tetris.TestTetris4.testPieceTNoPuedeBajarMas(TestTetris4.java:54)
+
