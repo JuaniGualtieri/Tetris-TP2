@@ -5,6 +5,7 @@ import org.junit.Test;
 
 public class TestBorrarLinea {
 
+
     @Test
     public void borrar_linea_con_cuadrados() {
         Board board = new Board();
@@ -19,9 +20,11 @@ public class TestBorrarLinea {
             board.placePiece(square, square.getX(), square.getY());
         }
 
+
         // Confirmamos que la última fila está completa
         assertTrue(board.isLineComplete(board.grid[lastRow]));
 
+        
         // Ejecutamos el borrado
         int borradas = board.clearLinea();
         assertEquals(2, borradas);
